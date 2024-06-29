@@ -1,0 +1,816 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 11
+"GET / HTTP/1.1" 200 11
+"GET /about/ HTTP/1.1" 200 8
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 11
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 11
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myapp_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 19, in index
+    for item in recipes_all:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myapp_recipe
+"GET / HTTP/1.1" 500 123986
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/models.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/models.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/models.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myapp_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 19, in index
+    for item in recipes_all:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myapp_recipe
+"GET / HTTP/1.1" 500 123986
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myapp_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 19, in index
+    for item in recipes_all:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myapp_recipe
+"GET / HTTP/1.1" 500 123986
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myapp_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 19, in index
+    for item in recipes_all:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myapp_recipe
+"GET / HTTP/1.1" 500 123986
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myapp_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 19, in index
+    for item in recipes_all:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myapp_recipe
+"GET / HTTP/1.1" 500 123986
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myapp_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 23, in index
+    for item in recipes_all:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myapp_recipe
+"GET / HTTP/1.1" 500 123975
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myapp_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 23, in index
+    for item in recipes_all:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myapp_recipe
+"GET / HTTP/1.1" 500 123975
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 27, in index
+    ind = choice(recipe_list)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/random.py", line 347, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+"GET / HTTP/1.1" 500 65223
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 28, in index
+    rnd = choice(recipe_list)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/random.py", line 347, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+"GET / HTTP/1.1" 500 65185
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 24, in index
+    rnd = choice(recipe_list)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/random.py", line 347, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+"GET / HTTP/1.1" 500 65185
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 28, in index
+    rnd = choice(recipe_list)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/random.py", line 347, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+"GET / HTTP/1.1" 500 65185
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 27, in index
+    return render(request, 'myapp/index.html', {'recipes_all': recipes_all})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 510, in parse
+    raise self.error(token, e)
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 510, in parse
+    raise self.error(token, e)
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1380, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/template/base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '‘publish'' from '‘publish''
+"GET / HTTP/1.1" 500 193495
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2176
+"GET / HTTP/1.1" 200 2176
+"GET /login/ HTTP/1.1" 200 2788
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/views/generic/edit.py", line 178, in get
+    return super().get(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/views/generic/edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py", line 86, in get_context_data
+    context = super().get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/views/generic/edit.py", line 72, in get_context_data
+    kwargs["form"] = self.get_form()
+                     ^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/views/generic/edit.py", line 36, in get_form
+    form_class = self.get_form_class()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/views/generic/edit.py", line 100, in get_form_class
+    model = self.get_queryset().model
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/.venv/lib/python3.12/site-packages/django/views/generic/detail.py", line 72, in get_queryset
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: RegisterNewView is missing a QuerySet. Define RegisterNewView.model, RegisterNewView.queryset, or override RegisterNewView.get_queryset().
+"GET /register/ HTTP/1.1" 500 95717
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2176
+"GET /register/ HTTP/1.1" 200 4549
+"POST /register/ HTTP/1.1" 200 4724
+"POST /register/ HTTP/1.1" 200 4724
+"POST /register/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2176
+"GET /login/ HTTP/1.1" 200 2788
+"POST /login/ HTTP/1.1" 200 3047
+"GET /register/ HTTP/1.1" 200 4549
+"POST /register/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2176
+"GET /login/ HTTP/1.1" 200 2788
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3875
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3627
+"POST /publish_new/ HTTP/1.1" 200 4881
+"POST /publish_new/ HTTP/1.1" 200 4881
+"POST /publish_new/ HTTP/1.1" 200 4881
+"POST /publish_new/ HTTP/1.1" 200 4881
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3734
+"POST /publish_new/ HTTP/1.1" 200 4987
+"POST /publish_new/ HTTP/1.1" 200 4987
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3734
+"POST /publish_new/ HTTP/1.1" 200 4987
+"POST /publish_new/ HTTP/1.1" 200 4987
+Method Not Allowed (GET): /logout/
+Method Not Allowed: /logout/
+"GET /logout/ HTTP/1.1" 405 0
+Method Not Allowed (GET): /logout/
+Method Not Allowed: /logout/
+"GET /logout/ HTTP/1.1" 405 0
+"GET / HTTP/1.1" 200 2194
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3734
+Method Not Allowed (GET): /logout/
+Method Not Allowed: /logout/
+"GET /logout/ HTTP/1.1" 405 0
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3734
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3734
+"POST /publish_new/ HTTP/1.1" 200 4987
+"POST /publish_new/ HTTP/1.1" 200 4987
+"GET / HTTP/1.1" 200 2194
+"GET / HTTP/1.1" 200 2194
+"GET / HTTP/1.1" 200 2194
+"GET / HTTP/1.1" 200 2194
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3734
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2194
+Method Not Allowed (GET): /logout/
+Method Not Allowed: /logout/
+"GET /logout/ HTTP/1.1" 405 0
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3734
+"POST /publish_new/ HTTP/1.1" 200 4989
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3710
+"POST /publish_new/ HTTP/1.1" 200 3769
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2194
+"GET /publish_new/ HTTP/1.1" 200 3516
+"POST /publish_new/ HTTP/1.1" 200 4770
+"POST /publish_new/ HTTP/1.1" 200 4770
+"POST /publish_new/ HTTP/1.1" 200 4770
+"POST /publish_new/ HTTP/1.1" 200 4770
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15949
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 16630
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14601
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4742
+"GET /__debug__/render_panel/?store_id=e3bdf523d8af46748e9b97b27d2dac81&panel_id=SQLPanel HTTP/1.1" 200 45651
+"GET /__debug__/render_panel/?store_id=e3bdf523d8af46748e9b97b27d2dac81&panel_id=TemplatesPanel HTTP/1.1" 200 6102
+"GET /__debug__/render_panel/?store_id=e3bdf523d8af46748e9b97b27d2dac81&panel_id=SignalsPanel HTTP/1.1" 200 2231
+"GET /__debug__/render_panel/?store_id=e3bdf523d8af46748e9b97b27d2dac81&panel_id=RequestPanel HTTP/1.1" 200 2309
+"GET /__debug__/render_panel/?store_id=e3bdf523d8af46748e9b97b27d2dac81&panel_id=HeadersPanel HTTP/1.1" 200 4789
+"GET /__debug__/render_panel/?store_id=e3bdf523d8af46748e9b97b27d2dac81&panel_id=SettingsPanel HTTP/1.1" 200 26448
+"GET /__debug__/render_panel/?store_id=e3bdf523d8af46748e9b97b27d2dac81&panel_id=HistoryPanel HTTP/1.1" 200 2505
+"GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+"GET /__debug__/render_panel/?store_id=e3bdf523d8af46748e9b97b27d2dac81&panel_id=VersionsPanel HTTP/1.1" 200 872
+"GET /__debug__/render_panel/?store_id=e3bdf523d8af46748e9b97b27d2dac81&panel_id=TimerPanel HTTP/1.1" 200 2269
+"GET /static/debug_toolbar/js/timer.js HTTP/1.1" 200 3686
+"GET /publish_new/ HTTP/1.1" 200 17513
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+"GET /__debug__/render_panel/?store_id=ef8e75a2fdda449fb522d16446c34117&panel_id=StaticFilesPanel HTTP/1.1" 200 36194
+"GET /__debug__/render_panel/?store_id=ef8e75a2fdda449fb522d16446c34117&panel_id=HistoryPanel HTTP/1.1" 200 4151
+"GET /static/debug_toolbar/js/history.js HTTP/1.1" 304 0
+"POST /publish_new/ HTTP/1.1" 200 17573
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+"GET /__debug__/render_panel/?store_id=887b18da41444261875722923f80c23f&panel_id=HistoryPanel HTTP/1.1" 200 6677
+"GET /static/debug_toolbar/js/history.js HTTP/1.1" 304 0
+"GET /__debug__/history_refresh/?store_id=887b18da41444261875722923f80c23f&exclude_history=True HTTP/1.1" 200 5925
+"GET /__debug__/render_panel/?store_id=887b18da41444261875722923f80c23f&panel_id=SQLPanel HTTP/1.1" 200 45766
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15949
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+"GET /publish_new/ HTTP/1.1" 200 17513
+"GET /__debug__/render_panel/?store_id=01b81e3adc884eda8678eba4f0d4d3c6&panel_id=HistoryPanel HTTP/1.1" 200 4151
+"GET /static/debug_toolbar/js/history.js HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15949
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+"GET /publish_new/ HTTP/1.1" 200 17388
+"POST /publish_new/ HTTP/1.1" 200 18644
+"POST /publish_new/ HTTP/1.1" 200 18642
+"GET /__debug__/render_panel/?store_id=b15ad529be5f49aeb8b7558e1798fc73&panel_id=SignalsPanel HTTP/1.1" 200 2276
+Method Not Allowed (GET): /logout/
+Method Not Allowed: /logout/
+"GET /logout/ HTTP/1.1" 405 0
+Not Found: /index/
+"GET /index/ HTTP/1.1" 404 18079
+"GET / HTTP/1.1" 200 15947
+"GET / HTTP/1.1" 200 15947
+"GET / HTTP/1.1" 200 15947
+"GET /publish_new/ HTTP/1.1" 200 17388
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=HistoryPanel HTTP/1.1" 200 26136
+"GET /static/debug_toolbar/js/history.js HTTP/1.1" 304 0
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=TimerPanel HTTP/1.1" 200 2264
+"GET /static/debug_toolbar/js/timer.js HTTP/1.1" 304 0
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=SettingsPanel HTTP/1.1" 200 26448
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=HeadersPanel HTTP/1.1" 200 4906
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=RequestPanel HTTP/1.1" 200 2317
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=SQLPanel HTTP/1.1" 200 45638
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=StaticFilesPanel HTTP/1.1" 200 36194
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=TemplatesPanel HTTP/1.1" 200 18126
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=CachePanel HTTP/1.1" 200 1737
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=SignalsPanel HTTP/1.1" 200 2276
+"GET /__debug__/render_panel/?store_id=7acb6dc680304e99a91b423cd22efd6e&panel_id=VersionsPanel HTTP/1.1" 200 872
+"POST /publish_new/ HTTP/1.1" 200 17440
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15949
+"GET /publish_new/ HTTP/1.1" 200 17388
+"POST /publish_new/ HTTP/1.1" 200 17446
+"POST /publish_new/ HTTP/1.1" 200 17444
+"GET / HTTP/1.1" 200 15947
+"GET / HTTP/1.1" 200 15947
+"GET / HTTP/1.1" 200 15947
+"GET /publish_new/ HTTP/1.1" 200 17388
+/Users/mariagadova/Documents/GeekBrains/Cookbook/DjangoRecipes/myproject/myapp/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15949
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+"GET /publish_new/ HTTP/1.1" 200 18329
+"POST /publish_new/ HTTP/1.1" 200 18532
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15949
+"GET /publish_new/ HTTP/1.1" 200 18329
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15949
+"GET /publish_new/ HTTP/1.1" 200 17388
+"POST /publish_new/ HTTP/1.1" 200 17452
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=TemplatesPanel HTTP/1.1" 200 18128
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=SQLPanel HTTP/1.1" 200 45637
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=RequestPanel HTTP/1.1" 200 3326
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=HistoryPanel HTTP/1.1" 200 6681
+"GET /static/debug_toolbar/js/history.js HTTP/1.1" 304 0
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=VersionsPanel HTTP/1.1" 200 872
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=TimerPanel HTTP/1.1" 200 2269
+"GET /static/debug_toolbar/js/timer.js HTTP/1.1" 304 0
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=SettingsPanel HTTP/1.1" 200 26448
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=HeadersPanel HTTP/1.1" 200 5077
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=StaticFilesPanel HTTP/1.1" 200 36194
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=CachePanel HTTP/1.1" 200 1737
+"GET /__debug__/render_panel/?store_id=caf50ab5856c4cd5aabbd918b6935120&panel_id=SignalsPanel HTTP/1.1" 200 2276
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15949
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+"GET /publish_new/ HTTP/1.1" 200 17388
+"POST /publish_new/ HTTP/1.1" 200 17446
+"GET /__debug__/render_panel/?store_id=2cdb930d692946d3bf2f79aac8d07e64&panel_id=HistoryPanel HTTP/1.1" 200 6675
+"GET /static/debug_toolbar/js/history.js HTTP/1.1" 304 0
+"GET /__debug__/render_panel/?store_id=2cdb930d692946d3bf2f79aac8d07e64&panel_id=SQLPanel HTTP/1.1" 200 45641
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15949
+"GET /publish_new/ HTTP/1.1" 200 17388
+"POST /publish_new/ HTTP/1.1" 200 17449

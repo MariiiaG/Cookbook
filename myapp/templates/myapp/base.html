@@ -1,0 +1,80 @@
+{% load bootstrap3 %}
+<html lang="en">
+<head>
+    <script src="{% bootstrap_jquery_url %}"></script>
+    {% bootstrap_javascript %}
+    {% bootstrap_css %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Главная Страница{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 2.5;
+            margin: 0;
+            padding: 30px;
+            background: linear-gradient(to bottom,  #98CA32 0%,#F7D4DC 100%);
+            }
+        h1 {color: #D61A46;}
+        p {color: #263409;}
+        footer {
+            margin-top: auto;
+          }
+        .container {
+            margin: auto;
+            height: auto;
+            width: 800px;
+         }
+    </style>
+    {% if 'javascript_in_head'|bootstrap_setting %}{% bootstrap_javascript jquery=True %}{% endif %}
+
+</head>
+<body>
+
+<header bac class="bg-success">
+    <div class="container">
+        <h1>Добро пожаловать в нашу книгу рецептов ! </h1>
+        <div>Здесь вы можете ознакомиться с нашими любимыми рецептами и поделиться своими :)</div>
+
+        <h3>ТОП-5 самых вкусных рецептов : </h3>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="{% url 'index' %}">Главная</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li>
+                    <a href="{% url 'publish' %}">Поделиться рецептом</a>
+                </li>
+                {% endif %}
+                {% if user.is_authenticated %}
+                <li>
+                    <a href="{% url 'logout' %}">Выход</a>
+                        </li>
+                    {% else %}
+                        <li>
+                            <a href="{% url 'login' %}">Войти</a>
+                </li>
+                <li>
+                    <a href="{% url 'register' %}">Зарегистрироваться</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+
+</body>
+</html>
